@@ -4,7 +4,10 @@ from langchain.document_loaders import PyPDFLoader, DirectoryLoader, PDFPlumberL
 from langchain.embeddings import HuggingFaceEmbeddings
 
 # Load pdf file from data path
-loader = DirectoryLoader('data', glob="*.pdf", loader_cls=PDFPlumberLoader)
+# PDF Plumber - can handle tables vs PyPDF - can't
+# Trying to explore how to extract images - Better to parse it as meta data than to store it locally in a vectordb (too much load)
+
+loader = DirectoryLoader('data', glob="*.pdf", loader_cls=PyPDFLoader)
 documents = loader.load()
 
 # Split the text from PDF into chunks
@@ -17,5 +20,5 @@ embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={'device': 'cpu'})
 
 # Build FAISS vector store
-vector_store =  FAISS.from_documents(texts, embeddings)
+vector_store = FAISS.from_documents(texts, embeddings)
 vector_store.save_local('vectorstore/db_faiss')
