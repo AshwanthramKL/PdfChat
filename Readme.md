@@ -4,6 +4,7 @@
 
 - [Description](#description)
 - [Installation](#installation)
+- [Tech Stack](#tech-stack)
 - [Demo](#demo)
   - [Sample Query](#sample-query)
   - [Sample Output](#sample-output)
@@ -25,7 +26,7 @@ pip install -r requirements.txt
 
 4. Ensure you have downloaded the 8-bit quantised GGML binary file from https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main and placed it into the `models/` folder
 
-![](assets/llama_model.jpeg)
+![Llama model](assets/llama_model.jpeg)
 
 5. To start parsing user queries into the application, launch the terminal from the project directory and run the following command:
 
@@ -40,6 +41,18 @@ It takes the application about 2-3 minutes to load the model, parse the query an
 ```
 
 ---
+
+## Tech Stack
+
+- [HuggingFace](https://huggingface.co/)
+- [HuggingFace Embeddings](https://python.langchain.com/docs/integrations/providers/huggingface#embeddings)
+- [Llama-7B-Chat](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main)
+- [PyPDF2](https://pypi.org/project/PyPDF2/)
+- [Langchain](https://python.langchain.com/)
+- [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+- [CTransformers](https://python.langchain.com/docs/integrations/providers/ctransformers)
+- [RetrievalQA](https://python.langchain.com/docs/integrations/providers/retrievalqa)
+- [FAISS](https://python.langchain.com/docs/integrations/vectorstores/faiss)
 
 ## Demo
 

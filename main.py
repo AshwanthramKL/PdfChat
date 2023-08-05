@@ -5,7 +5,7 @@ from src.utils import setup_dbqa
 if __name__ == "__main__":
     # to get qn from cmd line
     parser = argparse.ArgumentParser()
-    parser.add_argument('input', type=str)
+    parser.add_argument('i  nput', type=str)
     args = parser.parse_args()
     # Start timer to calculate response time and speed of cpu interface
     start = timeit.default_timer()
