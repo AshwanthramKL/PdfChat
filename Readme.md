@@ -1,5 +1,13 @@
 # PdfChat with llama2
 
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Demo](#demo)
+  - [Sample Query](#sample-query)
+  - [Sample Output](#sample-output)
+
 ## Description
 
 PdfChat is a application where you can chat with your research paper in pdf format. You can ask questions to your pdf and it will answer you. It is a fun way to interact with your pdf.
@@ -30,3 +38,17 @@ Note:
 The user query should be in double quotes.
 It takes the application about 2-3 minutes to load the model, parse the query and provide an answer.
 ```
+
+---
+
+## Demo
+
+### Sample Query
+
+`Tell me about Query2doc?`
+
+![Sample Query](assets/cmd_line_query.png)
+
+### Sample Output
+
+![Sample Output](assets/cmd_line_response.png)
