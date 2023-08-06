@@ -1,8 +1,12 @@
 import argparse
 import timeit
 from src.utils import setup_dbqa
+from db_create import db_create
 
 if __name__ == "__main__":
+    # Create Database after loading pdf files
+    db_create()
+    
     # to get qn from cmd line
     parser = argparse.ArgumentParser()
     parser.add_argument('input', type=str)
