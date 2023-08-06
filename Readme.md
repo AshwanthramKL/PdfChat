@@ -5,6 +5,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Tech Stack](#tech-stack)
+- [Flowchart](#flowchart)
 - [Demo](#demo)
   - [Sample Query](#sample-query)
   - [Sample Output](#sample-output)
@@ -54,6 +55,9 @@ It takes the application about 2-3 minutes to load the model, parse the query an
 - [RetrievalQA](https://python.langchain.com/docs/integrations/providers/retrievalqa)
 - [FAISS](https://python.langchain.com/docs/integrations/vectorstores/faiss)
 
+## Flowchart
+
+![Flowchart](assets/pdfChat_diagram_flow.png)
 ## Demo
 
 ### Sample Query
